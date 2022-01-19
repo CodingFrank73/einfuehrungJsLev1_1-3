@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <main>
+        <form action="">
+            <fieldset>
+                <legend>Zahl verdoppeln</legend>
+                <label for="number">Bitte eine Zahl eingeben:</label>
+                <input type="number" name="inputNumber" id="inputNumber">
+                <button type="button" onclick="double()">Verdoppel mich</button>
+                <p id="result"></p>
+            </fieldset>
+        </form>
+
+        <form action="" onsubmit="return false">
+            <fieldset>
+                <legend>Alter berechnen</legend>
+                <label for="yearOfBirth">Geburtsjahr</label>
+                <input type="text" name="yearOfBirth" id="yearOfBirth" placeholder="Gib bitte Dein Geburtsjahr ein">
+                <button type="submit" onclick="calc(yearOfBirth.value)">Berechne mein Alter</button>
+                <p id="alter"></p>
+            </fieldset>
+
+        </form>
+
+        <form action="" onsubmit="return false">
+            <fieldset>
+                <legend>Alter vergleichen</legend>
+
+                <label for="agePersonA">Alter Person 1</label>
+                <input type="number" name="agePersonA" id="agePersonA">
+                <label for="agePersonB">Alter Person 2</label>
+                <input type="number" name="agePersonB" id="agePersonB">
+
+                <button type="submit" onclick="compareAge(agePersonA.value, agePersonB.value)">alter
+                    Vergleichen</button>
+                <p id="comparison"></p>
+            </fieldset>
+
+        </form>
+    </main>
+
+
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>
